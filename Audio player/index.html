@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+    
+    <title>Audio Player</title>
+        
+    <script src = "p5/p5.js"></script>
+    <script src = "ui-master/dist/NexusUI.js"></script>
+    <script src="p5/addons/p5.sound.js"></script>
+    <script src="p5/addons/p5.dom.js"></script>
+    <script src = "script.js"></script>
+
+        
+    <div id = "play"></div>
+    <div id = "pause"></div>
+    <div id = "selector"></div>
+
+    <script>
+        var playButton = new Nexus.Button('#play',{
+          'size': [20, 20],
+          'mode': 'toggle',
+          'state': false
+        });
+        
+        var pauseButton = new Nexus.Button('#pause',{
+          'size': [20, 20],
+          'mode': 'toggle',
+          'state': false
+        });
+        
+        var selector = new Nexus.Select('#selector', {
+          'size': [300, 30],
+          'options': ['We Sink - CHVRCHES', 'Speaking Gently - BADBADNOTGOOD', 'You Got Me - The Roots ft. Erykah Badu']
+        })
+    </script>
+
+    </head>
+    
+    
+    
+    <body>
+    
+        
+        
+    </body>
+    
+</html>
